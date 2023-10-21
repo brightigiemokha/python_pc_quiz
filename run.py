@@ -7,27 +7,6 @@ if playing.lower() != "yes":
 
 print("Great Choice! Lets Play :)")
 
-score = 0
-
-def display_question(question):
-    global score
-    print("-------------------------")
-    print(question['question'])
-    print("-------------------------")
-    print(f"A. {question['a']}")
-    print(f"B. {question['b']}")
-    print(f"C. {question['c']}")
-    print(f"D. {question['d']}")
-
-    answer = input("Your answer: ")
-    
-    if answer.lower() == question['correct']:
-        print('Correct! Well Done')
-        score = score + 5
-    else:
-        print(f"Incorrect answer, the answer is {question['correct'].upper()}")
-
-
 # list of questions
 questions = [
     # question 1
@@ -50,7 +29,7 @@ questions = [
     },
     # question 3
     {
-        'question': 'Who released their first antivirus product called VirusScan in 1987?',
+        'question': 'Who released d first antivirus called VirusScan in 1987?',
         'a': 'John wesley',
         'b': 'John McAfee',
         'c': 'Norton',
@@ -104,7 +83,7 @@ questions = [
     },
     # question 9
     {
-        'question': 'Which of the following is the correct extension of the Python file?',
+        'question': 'Which is the correct extension of the Python file?',
         'a': '.python',
         'b': '.pl',
         'c': '.py',
@@ -121,6 +100,41 @@ questions = [
         'correct': 'a',
     },
 ]
-display_question(questions[0])
+score = 0
 
+
+def display_question(question):
+    global score
+    print("-------------------------")
+    print(question['question'])
+    print("-------------------------")
+    print(f"A. {question['a']}")
+    print(f"B. {question['b']}")
+    print(f"C. {question['c']}")
+    print(f"D. {question['d']}")
+
+    answer = input("Your answer: ")
+    
+    if answer.lower() == question['correct']:
+        print('Correct! Well Done')
+        score = score + 1
+    else:
+        print(f"Incorrect answer, the answer is {question['correct'].upper()}")
+
+
+display_question(questions[0])
+display_question(questions[1])
+display_question(questions[2])
+display_question(questions[3])
+display_question(questions[4])
+display_question(questions[5])
+display_question(questions[6])
+display_question(questions[7])
+display_question(questions[8])
+display_question(questions[9])
+
+print("-------------------------")
+print("You got " + str(score) + " questions correctly!")
+print("You got " + str((score / 10) * 100) + " %. ")
+print("-------------------------")
 quit()
