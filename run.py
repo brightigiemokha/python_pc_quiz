@@ -1,3 +1,10 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+print("Welcome to my Python Quiz!")
+
+playing = input("Would you like to Play? ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Great Choice! Lets Play :)")
+
+display_question(questions[0])
