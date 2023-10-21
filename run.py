@@ -60,6 +60,7 @@ questions = [
 
 score = 0
 
+
 def display_question(question):
     global score
     print("-------------------------")
@@ -69,3 +70,12 @@ def display_question(question):
     print(f"B. {question['b']}")
     print(f"C. {question['c']}")
     print(f"D. {question['d']}")
+
+    answer = input("Your answer: ")
+    
+    if answer.lower() == question['correct']:
+        print('Correct! Well Done')
+        score = score + 5
+    else:
+        print(f"Incorrect answer, the answer is {question['correct'].upper()}")
+
