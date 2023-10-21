@@ -38,7 +38,7 @@ questions = [
         'd': 'Bill Gate',
         'correct': 'b',
     },
-    # question 3
+    # question 4
     {
         'question': 'What word means to switch a computer off and on again?',
         'a': 'Hibenate',
@@ -47,4 +47,25 @@ questions = [
         'd': 'shut down',
         'correct': 'b',
     },
+     # question 5
+    {
+        'question': 'What term was coined by American John McCarthy in 1956?',
+        'a': 'John wesley',
+        'b': 'John McAfee',
+        'c': 'Norton',
+        'd': 'Bill Gate',
+        'correct': 'b',
+    },
 ]
+
+score = 0
+
+def display_question(question):
+    global score
+    print("-------------------------")
+    print(question['question'])
+    print("-------------------------")
+    print(f"A. {question['a']}")
+    print(f"B. {question['b']}")
+    print(f"C. {question['c']}")
+    print(f"D. {question['d']}")
