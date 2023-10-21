@@ -7,7 +7,26 @@ if playing.lower() != "yes":
 
 print("Great Choice! Lets Play :)")
 
-display_question(questions[0])
+score = 0
+
+def display_question(question):
+    global score
+    print("-------------------------")
+    print(question['question'])
+    print("-------------------------")
+    print(f"A. {question['a']}")
+    print(f"B. {question['b']}")
+    print(f"C. {question['c']}")
+    print(f"D. {question['d']}")
+
+    answer = input("Your answer: ")
+    
+    if answer.lower() == question['correct']:
+        print('Correct! Well Done')
+        score = score + 5
+    else:
+        print(f"Incorrect answer, the answer is {question['correct'].upper()}")
+
 
 # list of questions
 questions = [
@@ -47,7 +66,7 @@ questions = [
         'd': 'shut down',
         'correct': 'b',
     },
-     # question 5
+    # question 5
     {
         'question': 'What term was coined by American John McCarthy in 1956?',
         'a': 'John wesley',
@@ -56,26 +75,52 @@ questions = [
         'd': 'Bill Gate',
         'correct': 'b',
     },
+    # question 6
+    {
+        'question': 'Who developed Python Programming Language?',
+        'a': 'Wick van Rossum',
+        'b': 'Rasmus Lerdorf',
+        'c': 'Guido van Rossum',
+        'd': 'Niene Stom',
+        'correct': 'c',
+    },
+    # question 7
+    {
+        'question': 'Which type of Programming does Python support?',
+        'a': 'object-oriented programming',
+        'b': 'structured programming',
+        'c': 'functional programming',
+        'd': 'all of the mentioned',
+        'correct': 'd',
+    },
+    # question 8
+    {
+        'question': 'Is Python case sensitive when dealing with identifiers?',
+        'a': 'no',
+        'b': 'yes',
+        'c': 'machine dependent',
+        'd': 'none of the mentioned',
+        'correct': 'b',
+    },
+    # question 9
+    {
+        'question': 'Which of the following is the correct extension of the Python file?',
+        'a': '.python',
+        'b': '.pl',
+        'c': '.py',
+        'd': '.P',
+        'correct': 'c',
+    },
+    # question 10
+    {
+        'question': 'Is Python code compiled or interpreted?',
+        'a': 'Python code is both compiled and interpreted',
+        'b': 'Python code is neither compiled nor interpreted',
+        'c': 'Python code is only compiled',
+        'd': 'Python code is only interpreted',
+        'correct': 'a',
+    },
 ]
+display_question(questions[0])
 
-score = 0
-
-
-def display_question(question):
-    global score
-    print("-------------------------")
-    print(question['question'])
-    print("-------------------------")
-    print(f"A. {question['a']}")
-    print(f"B. {question['b']}")
-    print(f"C. {question['c']}")
-    print(f"D. {question['d']}")
-
-    answer = input("Your answer: ")
-    
-    if answer.lower() == question['correct']:
-        print('Correct! Well Done')
-        score = score + 5
-    else:
-        print(f"Incorrect answer, the answer is {question['correct'].upper()}")
-
+quit()
