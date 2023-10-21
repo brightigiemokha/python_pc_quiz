@@ -122,16 +122,8 @@ def display_question(question):
         print(f"Incorrect answer, the answer is {question['correct'].upper()}")
 
 
-display_question(questions[0])
-display_question(questions[1])
-display_question(questions[2])
-display_question(questions[3])
-display_question(questions[4])
-display_question(questions[5])
-display_question(questions[6])
-display_question(questions[7])
-display_question(questions[8])
-display_question(questions[9])
+for question in questions:
+    display_question(question)
 
 print("-------------------------")
 print("You got " + str(score) + " questions correctly!")
