@@ -1,3 +1,7 @@
+import sys, subprocess
+
+
+
 print("Welcome to my Python Quiz!")
 
 playing = input("Would you like to Play? ")
@@ -6,6 +10,8 @@ if playing.lower() != "yes":
     quit()
 
 print("Great Choice! Lets Play :)")
+subprocess.run('clear', shell=True)
+
 
 # list of questions
 questions = [
@@ -102,6 +108,7 @@ questions = [
 ]
 score = 0
 
+
 def clear_screen():
     pass
 
@@ -122,8 +129,10 @@ def display_question(question):
     if answer.lower() == question['correct']:
         print('Correct! Well Done')
         score = score + 1
+        subprocess.run('clear', shell=True)
     else:
         print(f"Incorrect answer, the answer is {question['correct'].upper()}")
+        subprocess.run('clear', shell=True)
 
 
 for question in questions:
