@@ -102,9 +102,13 @@ questions = [
 ]
 score = 0
 
+def clear_screen():
+    pass
+
 
 def display_question(question):
     global score
+    # TODO: clear screen function call
     print("-------------------------")
     print(question['question'])
     print("-------------------------")
@@ -114,7 +118,7 @@ def display_question(question):
     print(f"D. {question['d']}")
 
     answer = input("Your answer: ")
-    
+
     if answer.lower() == question['correct']:
         print('Correct! Well Done')
         score = score + 1
