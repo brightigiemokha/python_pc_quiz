@@ -131,6 +131,6 @@ for question in questions:
 
 print("-------------------------")
 print("You got " + str(score) + " questions correctly!")
-print("You got " + str((score / 10) * 100) + " %. ")
+print("You got " + str((score / len(questions)) * 100) + " %. ")
 print("-------------------------")
 quit()
