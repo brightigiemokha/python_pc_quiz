@@ -141,11 +141,11 @@ for question in questions:
 if score >= 7:
     print("Great work! you are Amazing")
     print ("You got " + str(score) + " questions correctly!")
-    print ("You got " + str((score / 4) * 100) + " %. ")
+    print ("You got " + str((score / 10) * 100) + " %. ")
 elif score >= 4:
     print("You did a good job! could be better")
     print ("You got " + str(score) + " questions correctly!")
-    print ("You got " + str((score / 4) * 100) + " %. ")
+    print ("You got " + str((score / 10) * 100) + " %. ")
 else:
     print("Score is low, Try harder")
     print ("You got " + str(score) + " questions correctly!")
