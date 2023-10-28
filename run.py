@@ -1,10 +1,9 @@
 import sys, subprocess
 
 
-
 print("Welcome to my Python Quiz!")
 
-playing = input("Would you like to Play? ")
+playing = input("Would you like to Play? Yes/No: ")
 
 if playing.lower() != "yes":
     quit()
