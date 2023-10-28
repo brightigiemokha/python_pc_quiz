@@ -46,7 +46,7 @@ questions = [
         'b': 'Sleep',
         'c': 'Reboot',
         'd': 'shut down',
-        'correct': 'b',
+        'correct': 'c',
     },
     # question 5
     {
