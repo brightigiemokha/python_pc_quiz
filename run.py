@@ -1,5 +1,6 @@
 import getch
-import sys, subprocess
+import sys
+import subprocess
 
 
 def key_press():
