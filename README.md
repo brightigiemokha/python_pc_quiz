@@ -63,6 +63,7 @@ For this project a [Code Institute template](https://github.com/Code-Institute-O
 * As a new user you will easily understand what the game is about as you also have the option to chose if to play or not.
 * You will be guided and informed how I can play the quiz 
 * You will have a clear feedback from inputs
+* You will have responds if wrong options are selected that are not related to quiz questions
 * You will have option either to play again or to exit the program
 
 ## How to play:
@@ -72,6 +73,7 @@ For this project a [Code Institute template](https://github.com/Code-Institute-O
   There are 10 questions and if the user gets 7 - 10 questions correctly they get a beautiful remark for their effort and knowledge.
   If the user get 5 - 6 questions correctly , the user get remarks of encouragement to support their goal.
   If user get 0 - 4 questions correctly user get a remark advising them to study more and come back for a better experience.
+  If User select an option that is not in the qestion A - D then the user is informed they have selected the wrong answer and need to use the options provided.
 
 
 - - -
