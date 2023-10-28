@@ -129,17 +129,22 @@ def display_question(question):
     print(f"C. {question['c']}")
     print(f"D. {question['d']}")
 
-    answer = input("Your answer: ")
+    while True:
+        answer = input("Your answer: ")
 
-    if answer.lower() == question['correct']:
-        print('Correct! Well Done')
-        score = score + 1
-        key_press()
-        subprocess.run('clear', shell=True)
-    else:
-        print(f"Incorrect answer, the answer is {question['correct'].upper()}")
-        key_press()
-        subprocess.run('clear', shell=True)
+        if answer.lower() == question['correct']:
+            print('Correct! Well Done')
+            score = score + 1
+            key_press()
+            clearscreen()
+            break
+        elif answer.lower() not in ['a', 'b', 'c', 'd']:
+            print('wrong selection please select A,B,C or D')
+        else:
+            print(f"Incorrect answer, the answer is {question['correct'].upper()}")
+            key_press()
+            clearscreen()
+            break
 
 
 # welcome message and options to play
@@ -152,7 +157,7 @@ if playing.lower() != "yes":
 
 print("Great Choice! Lets Play :)")
 key_press()
-subprocess.run('clear', shell=True)
+clearscreen()
 
 # start the Quiz
 for question in questions:
