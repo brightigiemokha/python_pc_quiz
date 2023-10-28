@@ -200,9 +200,10 @@ The terminal was used during the development of the application to identify and 
 
 ## Functionality
 ### Validator
-CI Python Linter was used to validate this project, 2 error was found "144: E501 line too long (83 > 79 characters)" sorted by breaking the lines.  4 other warning where due to the scii diagram and it was unavoidable.
+CI Python Linter was used to validate this project, 2 error was found "144: E501 line too long (83 > 79 characters)" sorted by breaking the lines.  all other warning have been resolved. there are no code errors
 ![CI Python Linter](images/pq_cilinthererror.png) 
-![CI Python Linter](images/pq_cilinther.png) 
+![CI Python Linter](images/pq_cilinther.png)
+![CI Python Linter](images/pq_noerrorcilinther.png)  
 
 
 
