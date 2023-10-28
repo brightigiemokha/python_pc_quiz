@@ -103,7 +103,15 @@ questions = [
         'correct': 'a',
     },
 ]
+
 score = 0
+
+
+def clearscreen():
+    '''
+    clear screen function
+    '''
+    subprocess.run('clear', shell=True)
 
 
 def display_question(question):
