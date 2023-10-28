@@ -1,15 +1,10 @@
+import getch
 import sys, subprocess
 
 
-print("Welcome to my Python Quiz!")
-
-playing = input("Would you like to Play? Yes/No: ")
-
-if playing.lower() != "yes":
-    quit()
-
-print("Great Choice! Lets Play :)")
-subprocess.run('clear', shell=True)
+def key_press():
+    print("press a key please...")
+    getch.getch()
 
 
 # list of questions
@@ -108,10 +103,6 @@ questions = [
 score = 0
 
 
-def clear_screen():
-    pass
-
-
 def display_question(question):
     global score
     # TODO: clear screen function call
@@ -128,15 +119,31 @@ def display_question(question):
     if answer.lower() == question['correct']:
         print('Correct! Well Done')
         score = score + 1
+        key_press()
         subprocess.run('clear', shell=True)
     else:
         print(f"Incorrect answer, the answer is {question['correct'].upper()}")
+        key_press()
         subprocess.run('clear', shell=True)
 
 
+# welcome message and options to play
+print("Welcome to my Python Quiz!")
+
+playing = input("Would you like to Play? Yes/No: ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Great Choice! Lets Play :)")
+key_press()
+subprocess.run('clear', shell=True)
+
+# start the Quiz
 for question in questions:
     display_question(question)
 
+# final scores and grades in percentage
 if score >= 7:
     print("Great work! you are Amazing")
     print ("You got " + str(score) + " questions correctly!")
@@ -150,4 +157,5 @@ else:
     print ("You got " + str(score) + " questions correctly!")
     print ("You got " + str((score / 10) * 100) + " %. ")
 
+# exit the program
 quit()
