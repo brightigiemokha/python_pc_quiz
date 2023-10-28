@@ -3,6 +3,9 @@ import sys, subprocess
 
 
 def key_press():
+    '''
+    detect key press function
+    '''
     print("press a key please...")
     getch.getch()
 
@@ -104,8 +107,12 @@ score = 0
 
 
 def display_question(question):
+    '''
+    display question function
+    '''
+
     global score
-    # TODO: clear screen function call
+
     print("-------------------------")
     print(question['question'])
     print("-------------------------")
@@ -146,16 +153,16 @@ for question in questions:
 # final scores and grades in percentage
 if score >= 7:
     print("Great work! you are Amazing")
-    print ("You got " + str(score) + " questions correctly!")
-    print ("You got " + str((score / 10) * 100) + " %. ")
+    print("You got " + str(score) + " questions correctly!")
+    print("You got " + str((score / 10) * 100) + " %. ")
 elif score >= 4:
     print("You did a good job! could be better")
-    print ("You got " + str(score) + " questions correctly!")
-    print ("You got " + str((score / 10) * 100) + " %. ")
+    print("You got " + str(score) + " questions correctly!")
+    print("You got " + str((score / 10) * 100) + " %. ")
 else:
     print("Score is low, Try harder")
-    print ("You got " + str(score) + " questions correctly!")
-    print ("You got " + str((score / 10) * 100) + " %. ")
+    print("You got " + str(score) + " questions correctly!")
+    print("You got " + str((score / 10) * 100) + " %. ")
 
 # exit the program
 quit()
