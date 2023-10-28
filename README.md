@@ -12,12 +12,12 @@ GitHub: https://github.com/brightigiemokha/python_pc_quiz<br>
 this project was designed for educational purpose and for fun. its super exciting and easy to play. you only have to pick an swer from the options provide and if you pick the correct answer you gate a pass and a score otherwide you are given the correct answer (just so you know it for next time) but no score will be added. at the end of this exciting game you get a total score for your performers and if the score is 70% and above you are given a great remark and if score is 50% and up to 60% you are given an encouraging remarks but if score is 0% to 40% you are advised to learn harder to become better. 
 You have an option to choose to play or not in the beginning of the game.
 
-![Python Quiz](image/hangman1.png)
+![Python Quiz](images/pythonquizgame.png)
 
 
 ## Demo
 
-A live demo can be found [here](https://hangmanapp.herokuapp.com/). The Application was deployes by Heroku.
+A live demo can be found [here](https://pythonquiz-a01f086ce4b8.herokuapp.com/). The Application was deployes by Heroku.
 
 - - -
 
@@ -41,46 +41,37 @@ A live demo can be found [here](https://hangmanapp.herokuapp.com/). The Applicat
 ## Language
 * Python3
 
-## Libraries
-* gspread 
-* random
-
 
 ## Frameworks & Tools
 * Heroku Platform - to deploy the application into live enviroment
 * Gitpod - to create the website
 * Github - to store the repository of website and deploy it
-* Google Sheets API: to handle the data automation.
+
 
 For this project a [Code Institute template](https://github.com/Code-Institute-Org/python-essentials-template), which provides all the files I needed to run the mock terminal in the browser.
-
-The words are all stored on the google sheet. 
-![Spreadsheet](image/spreadsheet.png)
-
 
 - - - 
 
 # User Experience (UX)
 
 ## The ideal users for this website is:
-* Users who are learning Python and want to test their knowledge.
+* Python Quiz game is builth for everyone who have good knowledge of computer and python package. its informative and challenging. user will find it very exciting as it helps them solve the problem if they didnt know what the answer is at the end of each questions.
 
 
 ## User stories:
 
-* As a new user, I expect to easily to have an idea of what the program is about.
-* I want to be guided and informed how I can play the quiz 
-* I want to have a clear feedback from inputs
-* I want to have option either to play again or to exit the program
+* As a new user you will easily understand what the game is about as you also have the option to chose if to play or not.
+* You will be guided and informed how I can play the quiz 
+* You will have a clear feedback from inputs
+* You will have option either to play again or to exit the program
 
 ## How to play:
 
-- Firstly, the user needs to guess a character from A - Z and if this character match
-  the word that is in the sheet that the system have randomly choosed the user get to 
-    choose another character until a complete spelling is done. and if the user give
-    a wrong character they get notified that the character was incorrect but still get
-    the chance to keep playing until after 6 failed attempt which will make the man hang.
-    a full picture of the hangman appears.
+- Firstly, The user is asked if they want to play the game and option from yes/No can be selected . if user select yes then the quiz game will run otherwise the game will quit. 
+  the user needs to guess an answer for each question and there are option from A - D and if this is the correct option the user is congratulated and given a score otherwise, user is informed they picked the wrong answer and the correct answer is shown to the user before moving to next questions.
+  There are 10 questions and if the user gets 7 - 10 questions correctly they get a beautiful remark for their effort and knowledge.
+  If the user get 5 - 6 questions correctly , the user get remarks of encouragement to support their goal.
+  If user get 0 - 4 questions correctly user get a remark advising them to study more and come back for a better experience.
 
 
 - - -
@@ -88,7 +79,7 @@ The words are all stored on the google sheet.
 ## Existing Features
 
 ### Introduction
-- Once the user runs the program, let's play Hangmen is dsplayed at the heading and the game starts.
+- Once the user runs the program, Welcome to Python Quiz! Would you like to Play? is displayed, here the user have a choice to make.
 
 
 ### Username
