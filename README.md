@@ -25,9 +25,7 @@ A live demo can be found [here](https://pythonquiz-a01f086ce4b8.herokuapp.com/).
 * [Technologies Used](#technologies-used)
 * [User Experience](#user-experience-ux)
 * [Design](#design)
-  * [Flowchart](#flowchart)
   * [Existing Features](#existing-features)
-  * [Future Implementations](#future-implementations)
 * [Deployment](#deployment)
   * [Heroku Deployment](#heroku-deployment)
 * [Testing](#testing)
@@ -39,12 +37,16 @@ A live demo can be found [here](https://pythonquiz-a01f086ce4b8.herokuapp.com/).
 ## Language
 * Python3
 
+# Libraries And Modules Used
+-**getch** - The module that gets a character from user input, with no output
+- **subprocess** - This module provides a clear page for next questions
+- **sys** - This module provides access to some objects used or maintained by the interpreter and to functions that interact strongly with the interpreter.
 
 ## Frameworks & Tools
 * Heroku Platform - to deploy the application into live enviroment
 * Gitpod - to create the website
 * Github - to store the repository of website and deploy it
-
+* AmIResponsive - to get webpage image for readme
 
 For this project a [Code Institute template](https://github.com/Code-Institute-Org/python-essentials-template), which provides all the files I needed to run the mock terminal in the browser.
 
@@ -57,12 +59,18 @@ For this project a [Code Institute template](https://github.com/Code-Institute-O
 
 
 ## User stories:
+#### New User Goals
+* As a new user, I want easily navigate through the application.
+* As a new user, I want easily understand the game and next option.
+* As a new user, I want to test my knowledge about the computers and its programs.
+* As a new user, I want to have learn something while having fun.
 
-* As a new user you will easily understand what the game is about as you also have the option to chose if to play or not.
+
+* As a new user you will easily understand what the game is about as its self explanatory and clearly stated.
 * You will be guided and informed how I can play the quiz 
 * You will have a clear feedback from inputs
 * You will have responds if wrong options are selected that are not related to quiz questions
-* You will have option either to play again or to exit the program
+
 
 ## How to play:
 
@@ -165,9 +173,9 @@ CI Python Linter was used to validate this project, 2 error was found "144: E501
 ## Code
 The following sources were used for this project:
 - Python Essentials from [Code Institut](https://codeinstitute.net/de/)
-html#getting-all-values-from-a-row-or-a-column)
 - [W3 Schools](https://www.w3schools.com/python/default.asp#gsc.tab=0)
-- [Stack overflow](https://stackoverflow.com/questions/21939652/
+- [Stack overflow](https://stackoverflow.com/questions/21939652/)
+- [CI Python](https://pep8ci.herokuapp.com/#)
 
 
 
@@ -182,5 +190,5 @@ html#getting-all-values-from-a-row-or-a-column)
 
 Developed By Bright Igemokha Anyiador for Code Institute's Portfolio Project 3 - 2023
 This code will not be changed until the end of the course.
-Feel free to connect with me on [Linkedin](https://www.linkedin.com/in/bright-anyiador-523746254/) :)
+Feel free to connect with me on [Linkedin](https://www.linkedin.com/in/bright-anyiador-523746254/) 
 
