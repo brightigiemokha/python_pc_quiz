@@ -12,7 +12,7 @@ GitHub: https://github.com/brightigiemokha/python_pc_quiz<br>
 this project was designed for educational purpose and for fun. its super exciting and easy to play. you only have to pick an swer from the options provide and if you pick the correct answer you gate a pass and a score otherwide you are given the correct answer (just so you know it for next time) but no score will be added. at the end of this exciting game you get a total score for your performers and if the score is 70% and above you are given a great remark and if score is 50% and up to 60% you are given an encouraging remarks but if score is 0% to 40% you are advised to learn harder to become better. 
 You have an option to choose to play or not in the beginning of the game.
 
-![Python Quiz](images/pq_responsive.png)
+![Python Quiz](readme_files/images/pq_responsive.png)
 
 
 ## Demo
@@ -30,8 +30,6 @@ A live demo can be found [here](https://pythonquiz-a01f086ce4b8.herokuapp.com/).
   * [Future Implementations](#future-implementations)
 * [Deployment](#deployment)
   * [Heroku Deployment](#heroku-deployment)
-  * [Run locally](#run-locally)
-  * [Create data model and integrate using an API](#create-data-model-and-integrate-using-an-api)
 * [Testing](#testing)
 * [Credits](#credits)
 
@@ -88,21 +86,21 @@ For this project a [Code Institute template](https://github.com/Code-Institute-O
 
 - User is welcomed to the Quiz game and User is asked if they want to play the game. When the User select YES then the game starts otherwise the game is closed.
 
-![Start Page](images/pq_start.png)
+![Start Page](readme_files/images/pq_start.png)
 
 - When the correct input is entered the user get a responds back to confirm he had entered the correct answer. otherwise the user get responds to confirm user have entered an incorrect answer and the correct answer is displayed to the user.
 
-![Correct Answer](images/pq_correct.png)
-![Wrong Answer](images/pq_incorrect.png)
+![Correct Answer](readme_files/images/pq_correct.png)
+![Wrong Answer](readme_files/images/pq_incorrect.png)
 
 - If user enters a invalid charactor or number, use will get a feedback of: Not a valid choice. and user is advised to select between A - D.
 
-![Invalid Input](images/pq_wronginput.png)
+![Invalid Input](readme_files/images/pq_wronginput.png)
 
 
-![Great Scores](images/pq_amazing.png)
-![Medium Scores](images/pq_dobetter.png)
-![Low Scores](images/pq_lowscore.png)
+![Great Scores](readme_files/images/pq_amazing.png)
+![Medium Scores](readme_files/images/pq_dobetter.png)
+![Low Scores](readme_files/images/pq_lowscore.png)
 
 - If the user answer enough questions correctly up to 7 questions then the user gets a great score display.
 - If the user answer few correct questions up to 5 then user get medium score display.
@@ -112,7 +110,7 @@ For this project a [Code Institute template](https://github.com/Code-Institute-O
 
 ### Run program button
 - The user can press the "RUN PROGRAM" button at any time to restart the program.
-![Run Program Button](images/pq_runprogram.png)
+![Run Program Button](readme_files/images/pq_runprogram.png)
 
 
 
@@ -142,56 +140,6 @@ In order for the project to run on Heroku, Heroku is needed to install the depen
 [GitHub repository](https://github.com/brightigiemokha/python_pc_quiz) 
 
 
-## Run locally
-
-**Making a Local Clone**
-1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/brightigiemokha/python_pc_quiz).
-3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
-4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
-5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
-
-Add the files in your new local repository. This stages them for the first commit:
-```bash
-$ git add .
-```
-
-To unstage a file, use:
-```bash
-$ git reset HEAD YOUR-FILE
-```
-
-Commit the files that you've staged in your local repository:
-```bash
-$ git commit -m "innitial commit"
-# Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
-```
-
-Push the changes in your local repository to GitHub.com:
-```bash
-$ git push origin main
-# Pushes the changes in your local repository up to the remote repository you specified as the origin
-```
-
-**Forking the GitHub Repository**
-To fork this website to either propose changes or to use as an idea for another website, follow these steps:
-1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/brightigiemokha/python_pc_quiz).
-3. Click the Fork button in the top right corner.
-4. Copy of the repository will be in your own GitHub account.
-
-To deploy from GitHub, follow these steps:
-
-1. Log into your GitHub repository, create a GitHub account if necessary.
-2. Click 'Settings' in the main Repository menu.
-3. Click 'Pages' from the left-hand side navigation menu.
-4. Within the Source section, click the "Branch" button and change from 'None' to 'Main'.
-5. The page should automatically refresh with a url displayed.
-6. Test the link by clicking on the url.
-
-The url for this website can be found [here](https://pythonquiz-a01f086ce4b8.herokuapp.com/) 
-
-
 
 ---
 # Testing 
@@ -201,9 +149,9 @@ The terminal was used during the development of the application to identify and 
 ## Functionality
 ### Validator
 CI Python Linter was used to validate this project, 2 error was found "144: E501 line too long (83 > 79 characters)" sorted by breaking the lines.  all other warning have been resolved. there are no code errors
-![CI Python Linter](images/pq_cilinthererror.png) 
-![CI Python Linter](images/pq_cilinther.png)
-![CI Python Linter](images/pq_noerrorcilinther.png)  
+![CI Python Linter](readme_files/images/pq_cilinthererror.png) 
+![CI Python Linter](readme_files/images/pq_cilinther.png)
+![CI Python Linter](readme_files/images/pq_noerrorcilinther.png)  
 
 
 
