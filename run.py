@@ -142,8 +142,8 @@ def display_question(question):
         elif answer.lower() not in ['a', 'b', 'c', 'd']:
             print('wrong selection please select A,B,C or D')
         else:
-            print(f"Incorrect answer, the answer is {
-                question['correct'].upper()}")
+            print(f"Incorrect answer, the answer is "
+                  f"{question['correct'].upper()}")
             key_press()
             clearscreen()
             break
@@ -157,7 +157,7 @@ playing = input("Would you like to Play? Yes/No: ")
 if playing.lower() != "yes":
     quit()
 
-print("Great Choice! Lets Play :)")
+print("Great Choice! Lets Play :")
 key_press()
 clearscreen()
 
