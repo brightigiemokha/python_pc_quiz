@@ -38,7 +38,7 @@ A live demo can be found [here](https://pythonquiz-a01f086ce4b8.herokuapp.com/).
 * Python3
 
 # Libraries And Modules Used
--**getch** - The module that gets a character from user input, with no output
+- **getch** - The module that gets a character from user input, with no output
 - **subprocess** - This module provides a clear page for next questions
 - **sys** - This module provides access to some objects used or maintained by the interpreter and to functions that interact strongly with the interpreter.
 
@@ -184,7 +184,7 @@ The following sources were used for this project:
 
 * To my amazing family for their amazing patiences all through my projects.
 
-* To Tomislav  for always pointing me in right directions. you are amazing Tom.
+* To Tomislav  for always pointing me in right directions and testing my codes. you are amazing Tom.
 
 - - - 
 

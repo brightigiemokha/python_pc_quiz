@@ -170,14 +170,23 @@ if score >= 7:
     print("Great work! you are Amazing")
     print("You got " + str(score) + " questions correctly!")
     print("You got " + str((score / 10) * 100) + " %. ")
+    key_press()
+    clearscreen()
 elif score >= 4:
     print("You did a good job! could be better")
     print("You got " + str(score) + " questions correctly!")
     print("You got " + str((score / 10) * 100) + " %. ")
+    key_press()
+    clearscreen()
 else:
     print("Score is low, Try harder")
     print("You got " + str(score) + " questions correctly!")
     print("You got " + str((score / 10) * 100) + " %. ")
-
-# exit the program
-quit()
+    key_press()
+    clearscreen()
+# restart / exit the game
+restart = input('would you love to restart game? Yes/No: ').lower()
+if restart == "yes":
+    display_question(question)
+else:
+    quit()
