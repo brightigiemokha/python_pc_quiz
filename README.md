@@ -80,6 +80,7 @@ For this project a [Code Institute template](https://github.com/Code-Institute-O
   If the user get 5 - 6 questions correctly , the user get remarks of encouragement to support their goal.
   If user get 0 - 4 questions correctly user get a remark advising them to study more and come back for a better experience.
   If User select an option that is not in the qestion A - D then the user is informed they have selected the wrong answer and need to use the options provided.
+  If User enjoyed the game and would love to continue to play or want to do better they have options to choose if they want game to restart at the end of every game.
 
 
 - - -
