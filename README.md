@@ -117,8 +117,13 @@ For this project a [Code Institute template](https://github.com/Code-Institute-O
 
 
 ### Run program button
-- The user can press the "RUN PROGRAM" button at any time to restart the program.
+- The user can press the "RUN PROGRAM" button at any time to start the program.
 ![Run Program Button](readme_files/images/pq_runprogram.png)
+
+### Play Again Quiz
+- The user can choose to restart game ofter the game end without having to close the window.
+there is an option for restarting the quiz over and over again.
+![Play again](readme_files/images/pq_playagain.png)
 
 
 
@@ -160,6 +165,7 @@ CI Python Linter was used to validate this project, 2 error was found "144: E501
 ![CI Python Linter](readme_files/images/pq_cilinthererror.png) 
 ![CI Python Linter](readme_files/images/pq_cilinther.png)
 ![CI Python Linter](readme_files/images/pq_noerrorcilinther.png)  
+![CI Python Linter](readme_files/images/pq_cilinther22.png) 
 
 
 
