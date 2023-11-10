@@ -149,6 +149,35 @@ def display_question(question):
             break
 
 
+# start the Quiz
+def start_quiz():
+    global score
+    score = 0
+    clearscreen()
+    for question in questions:
+        display_question(question)
+
+    # final scores and grades in percentage
+    if score >= 7:
+        print("Great work! you are Amazing")
+        print("You got " + str(score) + " questions correctly!")
+        print("You got " + str((score / 10) * 100) + " %. ")
+        key_press()
+        clearscreen()
+    elif score >= 4:
+        print("You did a good job! could be better")
+        print("You got " + str(score) + " questions correctly!")
+        print("You got " + str((score / 10) * 100) + " %. ")
+        key_press()
+        clearscreen()
+    else:
+        print("Score is low, Try harder")
+        print("You got " + str(score) + " questions correctly!")
+        print("You got " + str((score / 10) * 100) + " %. ")
+        key_press()
+        clearscreen()
+
+
 # welcome message and options to play
 print("Welcome to my Python Quiz!")
 
@@ -159,34 +188,12 @@ if playing.lower() != "yes":
 
 print("Great Choice! Lets Play :")
 key_press()
-clearscreen()
+start_quiz()
 
-# start the Quiz
-for question in questions:
-    display_question(question)
-
-# final scores and grades in percentage
-if score >= 7:
-    print("Great work! you are Amazing")
-    print("You got " + str(score) + " questions correctly!")
-    print("You got " + str((score / 10) * 100) + " %. ")
-    key_press()
-    clearscreen()
-elif score >= 4:
-    print("You did a good job! could be better")
-    print("You got " + str(score) + " questions correctly!")
-    print("You got " + str((score / 10) * 100) + " %. ")
-    key_press()
-    clearscreen()
-else:
-    print("Score is low, Try harder")
-    print("You got " + str(score) + " questions correctly!")
-    print("You got " + str((score / 10) * 100) + " %. ")
-    key_press()
-    clearscreen()
 # restart / exit the game
-restart = input('would you love to restart game? Yes/No: ').lower()
-if restart == "yes":
-    display_question(question)
-else:
-    quit()
+while True:
+    restart = input('would you love to restart game? Yes/No: ').lower()
+    if restart == "yes":
+        start_quiz()
+    else:
+        quit()
