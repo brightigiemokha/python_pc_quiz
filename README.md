@@ -191,7 +191,7 @@ The following sources were used for this project:
 
 * To my amazing family for their amazing patiences all through my projects.
 
-* To Tomislav  for always pointing me in right directions and testing my codes. you are amazing Tom.
+* To Tomislav  for always pointing me in right directions and testing my codes. you are amazing Tom...
 
 - - - 
 
